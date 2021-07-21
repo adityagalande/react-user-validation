@@ -12,10 +12,11 @@ function App() {
     });
   };
   return (
-    <div>
+    // This (React.Fragment) is alternat Option to write the root Tag element like (Wrapper). It reduce un-essential HTML elements. 
+    <React.Fragment>
       <AddUser onAddUser={addUsersHandler} />
       <UsersList users={usersList} />
-    </div>
+    </React.Fragment>
   );
 }
 
